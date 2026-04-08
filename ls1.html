@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Урок 1: Коржі — Наполеон з полуницею та лимоном</title>
+<meta property="og:title" content="Урок 1: Коржі — Наполеон з полуницею та лимоном">
+<meta property="og:description" content="Безкоштовний відео-урок: готуємо ідеальні коржі для Наполеону. Від Академії ARDO.">
+<meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '697569653986520');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=697569653986520&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+:root {
+  --bg: #f5f5f7;
+  --white: #ffffff;
+  --text: #1d1d1f;
+  --text2: #6e6e73;
+  --accent: #e8458b;
+  --accent2: #d63384;
+  --accent-soft: #fdf0f5;
+  --green: #34c759;
+  --green-soft: #eefbf0;
+  --blue: #007aff;
+  --blue-soft: #eef6ff;
+  --orange: #ff9500;
+  --orange-soft: #fff8ee;
+  --purple: #af52de;
+  --purple-soft: #f8eefe;
+  --muted: #6e6e73;
+  --red: #ff3b30;
+  --radius: 24px;
+  --radius-sm: 16px;
+  --shadow: 0 2px 12px rgba(0,0,0,0.07);
+  --shadow-hover: 0 10px 32px rgba(0,0,0,0.12);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+h1,h2,h3,h4 { font-weight: 700; letter-spacing: -0.3px; line-height: 1.15; }
+a { color: var(--accent); text-decoration: none; }
+.container { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+.trust-signal { text-align:center; padding:8px 0 0; font-size:13px; color:var(--text2); }
+.btn {
+  padding: 16px 32px; border-radius: 50px;
+  font-weight: 700; font-size: 16px;
+  display: inline-flex; align-items: center; gap: 10px;
+  transition: all .25s; border: none; cursor: pointer; text-decoration: none;
+}
+.btn-pink { background: var(--accent); color: #fff; }
+.btn-pink:hover { background: var(--accent2); color: #fff; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(232,69,139,0.3); }
+.btn .arrow { font-size: 20px; transition: transform .2s; }
+.btn:hover .arrow { transform: translateX(4px); }
+.hero { padding: 140px 0 60px; text-align: center; }
+.hero-badge {
+  display: inline-block; background: var(--accent-soft); color: var(--accent);
+  padding: 8px 20px; border-radius: 50px;
+  font-size: 14px; font-weight: 600; margin-bottom: 24px;
+}
+.hero h1 { font-size: clamp(38px, 7vw, 64px); font-weight: 900; letter-spacing: -1.5px; line-height: 1.05; margin-bottom: 20px; }
+.hero h1 em { color: var(--accent); font-style: normal; }
+.hero-sub { color: var(--text2); font-size: clamp(17px, 2.5vw, 21px); max-width: 620px; margin: 0 auto; line-height: 1.55; }
+.card {
+  background: var(--white); border-radius: var(--radius);
+  padding: 36px; box-shadow: var(--shadow);
+  transition: transform .3s, box-shadow .3s;
+  overflow: hidden; position: relative;
+}
+@media (hover: hover) { .card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); } }
+.card h2 { font-size: clamp(24px, 3vw, 36px); font-weight: 800; margin-bottom: 12px; letter-spacing: -0.5px; }
+.card h2 em { color: var(--accent); font-style: normal; }
+.card h3 { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+.card p { color: var(--text2); font-size: 15px; line-height: 1.6; }
+.card-dark { background: var(--accent-soft); color: var(--text); }
+.card-dark p { color: var(--text2); }
+.card-dark h2, .card-dark h3 { color: var(--text); }
+.card-midnight { background: #1a1a1e; }
+.card-midnight h2, .card-midnight h3 { color: #ffffff; }
+.card-midnight p { color: rgba(255,255,255,0.65); }
+.video-wrapper {
+  position: relative; padding-bottom: 56.25%; height: 0;
+  overflow: hidden; background: #000; border-radius: var(--radius-sm);
+}
+.video-wrapper iframe {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;
+}
+.tag { display: inline-block; padding: 4px 12px; border-radius: 50px; font-size: 12px; font-weight: 700; }
+.tag-green { background: rgba(52,199,89,0.12); color: var(--green); }
+.tag-orange { background: rgba(255,149,0,0.12); color: var(--orange); }
+.tag-blue { background: rgba(0,122,255,0.12); color: var(--blue); }
+.tag-purple { background: rgba(175,82,222,0.12); color: var(--purple); }
+.tag-pink { background: rgba(232,69,139,0.12); color: var(--accent); }
+.tc-header { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+.tc-avatar { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+.tc-avatar-placeholder { width: 56px; height: 56px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 800; flex-shrink: 0; }
+.tc-info { flex: 1; }
+.tc-info .tag { margin-bottom: 6px; }
+.tc-info h3 { margin: 0; }
+.tc-ig { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.tc-transform { display: flex; align-items: stretch; gap: 0; margin: 16px 0; border-radius: 12px; overflow: hidden; font-size: 13px; line-height: 1.4; }
+.tc-before, .tc-after { flex: 1; padding: 12px 14px; display: flex; flex-direction: column; gap: 6px; }
+.tc-before { background: rgba(255,59,48,0.06); }
+.tc-after { background: rgba(52,199,89,0.08); }
+.tc-badge { font-size: 10px; font-weight: 800; letter-spacing: 0.5px; padding: 2px 7px; border-radius: 4px; display: inline-block; width: fit-content; }
+.tc-badge-before { background: rgba(255,59,48,0.12); color: #ff3b30; }
+.tc-badge-after { background: rgba(52,199,89,0.15); color: var(--green); }
+.tc-arrow { display: flex; align-items: center; justify-content: center; padding: 0 6px; font-size: 18px; font-weight: 700; color: var(--accent); background: #fff; }
+.tc-result { margin-top: 12px; font-weight: 700; color: var(--green); font-size: 14px; }
+.quote-text { font-size: 15px; font-style: italic; color: var(--text2); border-left: 3px solid var(--accent); padding-left: 16px; margin-top: 14px; line-height: 1.6; }
+.section-space { padding: 16px 0 0; }
+.cta-section { text-align: center; padding: 20px 0 80px; }
+footer { padding: 40px 20px; text-align: center; color: var(--text2); font-size: 13px; }
+footer a { color: var(--accent); }
+#social-proof { margin-top: 12px; }
+.fade-in { opacity: 0; transform: translateY(16px); transition: opacity .5s ease, transform .5s ease; }
+.fade-in.visible { opacity: 1; transform: none; }
+.hero .fade-in { opacity: 1; transform: none; }
+@media (max-width: 768px) {
+  .container { padding: 0 28px; }
+  .card { padding: 24px; border-radius: 20px; }
+  .hero { padding: 70px 0 24px; }
+  .hero h1 { font-size: 36px; letter-spacing: -1px; line-height: 1.08; }
+  .hero-sub { font-size: 16px; }
+  .hero-badge { font-size: 12px; padding: 6px 14px; margin-bottom: 18px; }
+  .btn { padding: 14px 28px; font-size: 15px; width: 100%; justify-content: center; }
+  .card h2 { font-size: 24px; }
+  .card h3 { font-size: 18px; }
+  .card p { font-size: 14px; }
+  .section-space { padding: 8px 0 0; }
+  .video-wrapper { border-radius: 14px; }
+  .quote-text { font-size: 14px; }
+}
+</style>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge fade-in">🎬 Урок 1 з 4</div>
+    <h1 class="fade-in">Коржі для <em>Наполеону</em></h1>
+    <p class="hero-sub fade-in">Тонкі, хрусткі коржі — основа ідеального Наполеону. Дивись, як їх зробити.</p>
+  </div>
+</section>
+
+<!-- GUARANTEE BADGE -->
+<div class="container" style="margin-top:16px;">
+  <div style="background:linear-gradient(135deg, #eefbf0 0%, #ddf6e6 100%); border:1.5px solid var(--green); border-radius:20px; padding:18px 22px; text-align:center;">
+    <div style="display:inline-flex; align-items:center; gap:6px; background:var(--green); color:#fff; font-size:11px; font-weight:800; padding:4px 14px; border-radius:50px; letter-spacing:1px; text-transform:uppercase; margin-bottom:10px;">✓ Клуб Успішних Кондитерів</div>
+    <div style="font-size:17px; font-weight:900; color:var(--text); line-height:1.3;">Перше кондитерське навчання<br><span style="color:var(--green);">з гарантією заробітку</span></div>
+  </div>
+</div>
+
+<!-- VIDEO -->
+<div class="container" style="margin-top:16px;">
+  <div class="card fade-in" style="padding: 0; overflow: hidden;">
+    <div style="position:relative;padding-top:56.25%;"><iframe src="https://iframe.mediadelivery.net/embed/393500/9313e0e4-e2ce-4461-a76b-f15db3aea3d3?autoplay=false&loop=false&muted=true&preload=true&responsive=true" loading="lazy" style="border:0;position:absolute;top:0;height:100%;width:100%;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe></div>
+  </div>
+  <p class="trust-signal">Безкоштовний урок · Без реєстрації</p>
+  <p style="text-align:center; font-size:13px; color:var(--text2); margin-top:8px;">Наступний урок чекає тебе нижче 👇</p>
+</div>
+
+<!-- BRIDGE + TESTIMONIAL (rendered by JS) -->
+<div class="container section-space" id="social-proof"></div>
+
+<!-- RECIPE CTA -->
+<div class="container" style="margin-top:16px;">
+  <div class="card card-midnight fade-in" style="text-align:center; padding:44px 32px;">
+    <p style="font-size:16px; max-width:520px; margin:0 auto 16px; line-height:1.5;">Забирай рецепт мого легендарного Наполеону</p>
+    <h2 style="font-size:clamp(24px,4vw,32px); margin-bottom:6px;">РЕЦЕПТ НАПОЛЕОН</h2>
+    <h2 style="font-size:clamp(24px,4vw,32px); color:var(--accent); margin-bottom:16px;">ПОЛУНИЦЯ-ЛИМОН</h2>
+    <p style="font-size:16px; max-width:520px; margin:0 auto 24px;">— справжній вибух свіжості</p>
+    <a href="https://app.zenedu.io/l/x5Sn2cIP0fI0gII3YTs09E4TolZA4aCL" class="btn btn-pink fade-in" style="display:inline-flex; font-size:18px; padding:18px 40px;">
+      Забрати рецепт <span class="arrow">→</span>
+    </a>
+  </div>
+</div>
+
+
+
+<footer>
+  <p>🍰 Академія ARDO — <a href="#">Клуб Успішних Кондитерів</a></p>
+</footer>
+
+<script>
+const CLUB_MEMBERS = [
+  { name: "Людмила", avatar: "case_lyudmyla.jpg", result: "заробляє 20 000 грн/міс на тортах" },
+  { name: "Діана", avatar: "case_diana.jpg", result: "заробила на Кенвуд за 4 місяці" },
+  { name: "Юлія", avatar: "case_yulia_curator.jpg", result: "стала куратором, 30 000 грн/міс" },
+  { name: "Анна", avatar: "case_maryna.jpg", result: "100 тортів на місяць" },
+  { name: "Христина", avatar: "case_katya.jpg", result: "16 000 грн за одне замовлення" },
+  { name: "Валерія", avatar: "case_karyna.jpg", result: "заробила 50 000 грн і кинула склад" },
+  { name: "Ірина", avatar: "case_svitlana.jpg", result: "підняла ціну макарон з 20 до 60 грн" },
+  { name: "Яна", avatar: "case_viktoriya.jpg", result: "оплачує навчання з замовлень — і ще лишається" },
+  { name: "Анастасія", avatar: "case_tetyana.jpg", result: "купила PlayStation сину із грошей від тортів" },
+  { name: "Наталія", avatar: "case_natalka.jpg", result: "отримала замовлення на 100 макарон за раз" },
+  { name: "Оксана", avatar: "case_oksana2.jpg", result: "регулярні замовлення в Іспанії без знання мови" },
+  { name: "Наталя", avatar: "case_daryna.jpg", result: "мусові торти — замовляє весь Ізраїль" },
+  { name: "Лариса", avatar: "case_inna.jpg", result: "мама 4 доньок — 2 роки на замовлення в Польщі" },
+  { name: "Оксана У.", avatar: "case_alina.jpg", result: "почала з грошей на комуналку — тепер свій бізнес" }
+];
+
+function getSegmentId() {
+  const params = new URLSearchParams(window.location.search);
+  return parseInt(params.get('s')) || 1;
+}
+
+function buildLink(page) {
+  return page + '?s=' + getSegmentId();
+}
+
+function renderClubMembers() {
+  let html = '<div class="fade-in" style="margin-top:24px;">';
+  html += '<h3 style="text-align:center; margin-bottom:8px; font-size:20px; font-weight:900; color:var(--text);">Вже в клубі:</h3>';
+  html += '<p style="text-align:center; font-size:14px; color:var(--accent); font-weight:700; margin-bottom:16px;">900+ учасниць — ось їхні результати</p>';
+  html += '<div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">';
+  CLUB_MEMBERS.forEach(function(m) {
+    html += '<div class="card card-dark fade-in" style="padding:16px 10px; text-align:center;">' +
+      '<img src="https://admin.vgsolutions.cloud/static/img/' + m.avatar + '" alt="' + m.name + '" style="width:76px; height:76px; border-radius:50%; object-fit:cover; border:3px solid var(--accent); margin:0 auto 10px; display:block; object-position:top;">' +
+      '<p style="font-size:13px; font-weight:700; margin:0 0 5px; color:var(--text);">' + m.name + '</p>' +
+      '<p style="font-size:12px; color:var(--accent); font-weight:800; margin:0; line-height:1.3;">' + m.result + '</p>' +
+    '</div>';
+  });
+  html += '</div></div>';
+  return html;
+}
+
+function initFadeIn() {
+  var obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.fade-in').forEach(function(el) { obs.observe(el); });
+}
+
+function initSegmentLinks() {
+  document.querySelectorAll('a[data-lesson]').forEach(function(a) {
+    a.href = buildLink(a.dataset.lesson);
+  });
+}
+
+// Init
+document.getElementById('social-proof').innerHTML = renderClubMembers();
+initSegmentLinks();
+initFadeIn();
+</script>
+
+<script>
+(function () {
+  // Собираем все параметры: из URL + из localStorage (трекер)
+  var urlParams = new URLSearchParams(window.location.search);
+  var stored = JSON.parse(localStorage.getItem('landing_params') || '{}');
+
+  // Объединяем: сначала stored, потом URL (URL имеет приоритет)
+  var allParams = {};
+  Object.keys(stored).forEach(function(key) {
+    if (stored[key]) allParams[key] = stored[key];
+  });
+  urlParams.forEach(function(value, key) {
+    allParams[key] = value;
+  });
+
+  if (Object.keys(allParams).length === 0) return;
+
+  function updateLink(link) {
+    try {
+      var href = link.getAttribute('href');
+      if (!href || href.startsWith('#') || href.startsWith('javascript:')) return;
+      var url = new URL(href, window.location.origin);
+      Object.keys(allParams).forEach(function(key) {
+        if (!url.searchParams.has(key)) url.searchParams.append(key, allParams[key]);
+      });
+      link.href = url.toString();
+    } catch (e) {}
+  }
+  function processLinks() { document.querySelectorAll('a').forEach(updateLink); }
+  processLinks();
+  var observer = new MutationObserver(function() { processLinks(); });
+  observer.observe(document.body, { childList: true, subtree: true });
+})();
+</script>
+
+<!-- UTM / FBC / FBP / IP TRACKER -->
+<script>
+(function(){
+  var params = new URLSearchParams(window.location.search);
+  var stored = JSON.parse(localStorage.getItem('landing_params') || '{}');
+
+  var fbKeys = ['fbc','fbp','fbclid'];
+  params.forEach(function(value, key){
+    if(key.indexOf('utm_') === 0 || fbKeys.indexOf(key) !== -1){
+      stored[key] = value;
+    }
+  });
+
+  if(!stored.fbc){
+    var m = document.cookie.match(/(?:^|;\s*)_fbc=([^;]*)/);
+    if(m) stored.fbc = decodeURIComponent(m[1]);
+  }
+
+  if(!stored.fbp){
+    var m2 = document.cookie.match(/(?:^|;\s*)_fbp=([^;]*)/);
+    if(m2) stored.fbp = decodeURIComponent(m2[1]);
+  }
+
+  function tryGeoAPIs(){
+    var apis = [
+      {
+        url: 'https://ipapi.co/json/',
+        parse: function(d){ return { ip: d.ip, country: d.country_name, city: d.city }; }
+      },
+      {
+        url: 'https://ip-api.com/json/?fields=query,country,city',
+        parse: function(d){ return { ip: d.query, country: d.country, city: d.city }; }
+      },
+      {
+        url: 'https://ipwho.is/',
+        parse: function(d){ return { ip: d.ip, country: d.country, city: d.city }; }
+      },
+      {
+        url: 'https://api.ipify.org?format=json',
+        parse: function(d){ return { ip: d.ip }; }
+      }
+    ];
+
+    function tryNext(i){
+      if(i >= apis.length){
+        save(stored);
+        return;
+      }
+      fetch(apis[i].url)
+        .then(function(r){ return r.json(); })
+        .then(function(data){
+          var parsed = apis[i].parse(data);
+          if(parsed.ip) stored.ip = parsed.ip;
+          if(parsed.country) stored.country = parsed.country;
+          if(parsed.city) stored.city = parsed.city;
+          save(stored);
+        })
+        .catch(function(){
+          tryNext(i + 1);
+        });
+    }
+    tryNext(0);
+  }
+  tryGeoAPIs();
+
+  function save(data){
+    localStorage.setItem('landing_params', JSON.stringify(data));
+    sendParams(data);
+  }
+
+  function sendParams(data){
+    if(Object.keys(data).length === 0) return;
+    var payload = Object.assign({}, data, {
+      page_url: window.location.href,
+      timestamp: new Date().toISOString()
+    });
+
+    fetch('https://admin.vgsolutions.cloud/webhook/8cfa8768-d8a7-480a-b65f-391f11ce3d94', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(payload)
+    })
+    .catch(function(err){
+      navigator.sendBeacon(
+        'https://admin.vgsolutions.cloud/webhook/8cfa8768-d8a7-480a-b65f-391f11ce3d94',
+        new Blob([JSON.stringify(payload)], {type: 'application/json'})
+      );
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
